@@ -4,13 +4,448 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/index.php?alunno=davide&chiave=valore HTTP/1.1
+cazz                   
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+http://spano.sc.unica.it/httpTest/index.php?alunno=davide&chiave=pippo
+
+HTTP/1.0 403 Forbidden
+Cache-Control: no-cache
+Content-Type: text/html
+Expires: Fri, 2 Jan 1970 23:00:01 GMT
+Connection: close
+Content-Length: 1266
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Access Denied</title>
+    <style type="text/css">
+      body, table
+      {
+        font-family: verdana, geneva, ariel;
+        color:   #2d558e;
+      }
+      html, body
+      {
+        margin:  0;
+        padding: 0;
+        height:  100%;
+        border:  none;
+      }
+    </style>
+  </head>
+  <!--
+    URLForbidden.html is displayed when the requested page:
+    - contains invalid characters or format
+    - the URL is in blacklist
+    - the category server is not configured properly
+    - the category server is unreachable
+    - the categories of the URL are forbidden and reclassification is not allowed
+  -->
+  <body>
+    <table style="height:100%;width:100%;" summary="">
+      <tr>
+        <td align="center" width="100%" height="100%">
+          <table cellspacing="0" cellpadding="0" summary="">
+            <tr>
+              <td><h1>Forbidden:</h1></td>
+            </tr>
+            <tr>
+              <td>Access to the location: <b>http://</b><br/><br/>has been denied for the following reason: <br/><b>Bad Request</b></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+POST /httpTest/index.php HTTP/1.1
+host: spano.sc.unica.it
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+alunno=davide&chiave=valore
+
+
+HTTP/1.0 403 Forbidden
+Cache-Control: no-cache
+Content-Type: text/html
+Expires: Fri, 2 Jan 1970 23:00:01 GMT
+Connection: close
+Content-Length: 1266
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Access Denied</title>
+    <style type="text/css">
+      body, table
+      {
+        font-family: verdana, geneva, ariel;
+        color:   #2d558e;
+      }
+      html, body
+      {
+        margin:  0;
+        padding: 0;
+        height:  100%;
+        border:  none;
+      }
+    </style>
+  </head>
+  <!--
+    URLForbidden.html is displayed when the requested page:
+    - contains invalid characters or format
+    - the URL is in blacklist
+    - the category server is not configured properly
+    - the category server is unreachable
+    - the categories of the URL are forbidden and reclassification is not allowed
+  -->
+  <body>
+    <table style="height:100%;width:100%;" summary="">
+      <tr>
+        <td align="center" width="100%" height="100%">
+          <table cellspacing="0" cellpadding="0" summary="">
+            <tr>
+              <td><h1>Forbidden:</h1></td>
+            </tr>
+            <tr>
+              <td>Access to the location: <b>http://</b><br/><br/>has been denied for the following reason: <br/><b>Bad Request</b></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ 
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+POST /httpTest/index.php HTTP/1.1
+host: spano.sc.unica.it
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+
+
+
+
+
+
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+POST /httpTest/index.php HTTP/1.1
+host: spano.sc.unica.it
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+alunno=davide&chiave=valore
+
+
+HTTP/1.0 403 Forbidden
+Cache-Control: no-cache
+Content-Type: text/html
+Expires: Fri, 2 Jan 1970 23:00:01 GMT
+Connection: close
+Content-Length: 1266
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Access Denied</title>
+    <style type="text/css">
+      body, table
+      {
+        font-family: verdana, geneva, ariel;
+        color:   #2d558e;
+      }
+      html, body
+      {
+        margin:  0;
+        padding: 0;
+        height:  100%;
+        border:  none;
+      }
+    </style>
+  </head>
+  <!--
+    URLForbidden.html is displayed when the requested page:
+    - contains invalid characters or format
+    - the URL is in blacklist
+    - the category server is not configured properly
+    - the category server is unreachable
+    - the categories of the URL are forbidden and reclassification is not allowed
+  -->
+  <body>
+    <table style="height:100%;width:100%;" summary="">
+      <tr>
+        <td align="center" width="100%" height="100%">
+          <table cellspacing="0" cellpadding="0" summary="">
+            <tr>
+              <td><h1>Forbidden:</h1></td>
+            </tr>
+            <tr>
+              <td>Access to the location: <b>http://</b><br/><br/>has been denied for the following reason: <br/><b>Bad Request</b></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/checkBrowser.php HTTP/1.1 
+
+host: spano.sc.unica.it
+User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)HTTP/1.1 400 Bad Request
+Date: Wed, 02 Mar 2016 15:27:23 GMT
+Server: Apache/2.4.12 (Ubuntu)
+Content-Length: 308
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+<hr>
+<address>Apache/2.4.12 (Ubuntu) Server at sigchi-italy.org Port 80</address>
+</body></html>
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)
+bash: errore di sintassi vicino al token non atteso "("
+studente@amministratore-Aspire-X3810:~$ 
+studente@amministratore-Aspire-X3810:~$ 
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/checkBrowser.php HTTP/1.1 
+
+host: spano.sc.unica.it
+User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)HTTP/1.1 400 Bad Request
+Date: Wed, 02 Mar 2016 15:28:47 GMT
+Server: Apache/2.4.12 (Ubuntu)
+Content-Length: 308
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+<hr>
+<address>Apache/2.4.12 (Ubuntu) Server at sigchi-italy.org Port 80</address>
+</body></html>
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)
+bash: errore di sintassi vicino al token non atteso "("
+studente@amministratore-Aspire-X3810:~$ GET /httpTest/checkBrowser.php HTTP/1.1 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>The page cannot be found</TITLE>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<STYLE type="text/css">
+  BODY { font: 8pt/12pt verdana }
+  H1 { font: 13pt/15pt verdana }
+  H2 { font: 8pt/12pt verdana }
+  A:link { color: red }
+  A:visited { color: maroon }
+</STYLE>
+</HEAD><BODY><TABLE width=500 border=0 cellspacing=10><TR><TD>
+
+<h1>The page cannot be found</h1>
+The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+<hr>
+<p>Please try the following:</p>
+<ul>
+<li>Make sure that the Web site address displayed in the address bar of your browser is spelled and formatted correctly.</li>
+<li>If you reached this page by clicking a link, contact
+ the Web site administrator to alert them that the link is incorrectly formatted.
+</li>
+<li>Click the <a href="javascript:history.back(1)">Back</a> button to try another link.</li>
+</ul>
+<h2>HTTP Error 404 - File or directory not found.<br>Internet Information Services (IIS)</h2>
+<hr>
+<p>Technical Information (for support personnel)</p>
+<ul>
+<li>Go to <a href="http://go.microsoft.com/fwlink/?linkid=8180">Microsoft Product Support Services</a> and perform a title search for the words <b>HTTP</b> and <b>404</b>.</li>
+<li>Open <b>IIS Help</b>, which is accessible in IIS Manager (inetmgr),
+ and search for topics titled <b>Web Site Setup</b>, <b>Common Administrative Tasks</b>, and <b>About Custom Error Messages</b>.</li>
+</ul>
+
+</TD></TR></TABLE></BODY></HTML>
+studente@amministratore-Aspire-X3810:~$ 
+studente@amministratore-Aspire-X3810:~$ host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+host:: comando non trovato
+studente@amministratore-Aspire-X3810:~$ User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)GET /httpTest/checkBrowser.php HTTP/1.1 
+bash: errore di sintassi vicino al token non atteso "("
+studente@amministratore-Aspire-X3810:~$ 
+studente@amministratore-Aspire-X3810:~$ host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+host:: comando non trovato
+studente@amministratore-Aspire-X3810:~$ User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)GET /httpTest/checkBrowser.php HTTP/1.1 
+bash: errore di sintassi vicino al token non atteso "("
+studente@amministratore-Aspire-X3810:~$ 
+studente@amministratore-Aspire-X3810:~$ host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+host:: comando non trovato
+studente@amministratore-Aspire-X3810:~$ User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)GET /httpTest/checkBrowser.php HTTP/1.1 
+bash: errore di sintassi vicino al token non atteso "("
+studente@amministratore-Aspire-X3810:~$ 
+studente@amministratore-Aspire-X3810:~$ host: spano.sc.unica.it
+Comando "host:" non trovato. Forse si intendeva:
+ Comando "host" dal pacchetto "bind9-host" (main)
+ Comando "host" dal pacchetto "knot-host" (universe)
+ Comando "hostn" dal pacchetto "torque-client-x11" (universe)
+ Comando "hostn" dal pacchetto "torque-client" (universe)
+host:: comando non trovato
+studente@amministratore-Aspire-X3810:~$ User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)bash: errore di sintassi vicino al token non atteso "("
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/checkBrowser.php HTTP/1.1 
+
+host: spano.sc.unica.it
+User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)HTTP/1.1 400 Bad Request
+Date: Wed, 02 Mar 2016 15:29:55 GMT
+Server: Apache/2.4.12 (Ubuntu)
+Content-Length: 308
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+<hr>
+<address>Apache/2.4.12 (Ubuntu) Server at sigchi-italy.org Port 80</address>
+</body></html>
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident
+bash: errore di sintassi vicino al token non atteso "("
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/checkBrowser.php HTTP/1.1
+host: spano.sc.unica.it
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 
+
+HTTP/1.1 200 OK
+Date: Wed, 02 Mar 2016 15:31:29 GMT
+Server: Apache/2.4.12 (Ubuntu)
+X-Powered-By: PHP/5.6.11-1ubuntu3.1
+Vary: Accept-Encoding
+Content-Length: 573
+Content-Type: text/html; charset=UTF-8
+
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Test del Browser</h1>
+                <p>
+            
+        
+Stai usando Windows            <p> 
+                Stai usando Firefox!        </p>
+        <p><code>
+                Mozilla/5.0 (Windows NT 6.2; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0            </code>
+        </p>
     </body>
 </html>
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ telnet spano.sc.unica.it 80
+Trying 192.167.155.72...
+Connected to spano.sc.unica.it.
+Escape character is '^]'.
+GET /httpTest/checkBrowser.php HTTP/1.1
+host: spano.sc.unica.it
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22
+
+HTTP/1.1 200 OK
+Date: Wed, 02 Mar 2016 15:32:03 GMT
+Server: Apache/2.4.12 (Ubuntu)
+X-Powered-By: PHP/5.6.11-1ubuntu3.1
+Vary: Accept-Encoding
+Content-Length: 657
+Content-Type: text/html; charset=UTF-8
+
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Test del Browser</h1>
+                <p>
+            
+        
+Stai usando Windows            <p> 
+                Stai usando un browser con webkit (Safari o Chrome?)<br/>Usi Chrome!        </p>
+        <p><code>
+                Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22            </code>
+        </p>
+    </body>
+</html>
+Connection closed by foreign host.
+studente@amministratore-Aspire-X3810:~$ 
+
