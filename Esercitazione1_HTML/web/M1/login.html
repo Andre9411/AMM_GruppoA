@@ -5,12 +5,33 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
+	<head>
+		<title>LOGIN</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initiale-scale=1.0">
+	</head>
+	<body>
+		<center>
+		<form action="login" method="post">
+			<div>
+				<label for="Username">Username</label>
+                <input type="text" name="Username" id="Username" />
+                <br>
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" />
+            </div>
+        </form>
+        <form action="venditore.html">
+            <div>
+                <input type="submit" value="Login come venditore">
+            </div>
+        </form>
+        <form action="cliente.html">
+        	<div>
+        		<input type="submit" value="Login come cliente">
+        	</div>
+        </form>
+        </center>
+        <a href="descrizione.html">Torna indietro</a>
     </body>
 </html>
