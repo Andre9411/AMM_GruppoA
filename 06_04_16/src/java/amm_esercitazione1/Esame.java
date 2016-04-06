@@ -13,9 +13,9 @@ public class Esame {
     
     private String nomeStudente ;
     private String cognomeStudente;
-    private int matricolaStudente;
+    private String matricolaStudente;
     private String nomeEsame;
-    private int voto;
+    private String voto;
     private String nota;
     
     
@@ -24,9 +24,9 @@ public class Esame {
     {
         nomeStudente = "";
         cognomeStudente = "";
-        matricolaStudente = 0;
+        matricolaStudente = "";
         nomeEsame = "";
-        voto = 0;
+        voto = "";
         nota = "_";
     }
 
@@ -61,14 +61,14 @@ public class Esame {
     /**
      * @return the matricolaStudente
      */
-    public int getMatricolaStudente() {
+    public String getMatricolaStudente() {
         return matricolaStudente;
     }
 
     /**
      * @param matricolaStudente the matricolaStudente to set
      */
-    public void setMatricolaStudente(int matricolaStudente) {
+    public void setMatricolaStudente(String matricolaStudente) {
         this.matricolaStudente = matricolaStudente;
     }
 
@@ -89,14 +89,14 @@ public class Esame {
     /**
      * @return the voto
      */
-    public int getVoto() {
+    public String getVoto() {
         return voto;
     }
 
     /**
      * @param voto the voto to set
      */
-    public void setVoto(int voto) {
+    public void setVoto(String voto) {
         this.voto = voto;
     }
 
