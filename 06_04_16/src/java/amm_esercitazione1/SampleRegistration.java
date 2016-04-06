@@ -56,7 +56,7 @@ public class SampleRegistration extends HttpServlet {
             esame.setMatricolaStudente(matricola);
             esame.setNomeEsame(nomeEsame);
             esame.setVoto(voto);
-            esame.setNote(commentoProf);
+            esame.setNota(commentoProf);
             // Esame registrato
             registrato = true;
         }
@@ -68,6 +68,19 @@ try (PrintWriter out = response.getWriter()) {
             out.println("<head><title>Registrazione esami veloce</title></head>");
             out.println("<body>");
             out.println("<h1> Registrazione Esami Triennale e Magistrale </h1>");
+            if (registrato) {
+                out.println("<div>");
+                out.println("<p><strong>Registrazione completata con successo</strong></p>");
+                out.println("<p>Nome studente:" + esame.getNomeStudente() + "</p>");
+                out.println("<p>Cognome studente:" + esame.getCognomeStudente() + "</p>");
+                out.println("<p>Matricola studente:" + esame.getMatricolaStudente() + "</p>");
+                out.println("<p>Esame:" + esame.getNomeEsame() + "</p>");
+                out.println("<p>Voto:" + esame.getVoto() + "</p>");
+                out.println("<p>Commento:" + esame.getNota() + "</p>");
+                out.println("</div>");
+            } 
+
+
             out.println("<form method=\"post\" action=\"simpleregistration.html\">");
             out.println("  <div>");
             out.println("    <label for=\"NomeStudente\">Nome</label>");
