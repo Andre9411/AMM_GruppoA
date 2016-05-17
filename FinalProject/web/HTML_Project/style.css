@@ -7,12 +7,9 @@ and open the template in the editor.
     Created on : 17-mag-2016, 18.15.16
     Author     : Andre
 */
-body{background-color: blue};
-h1{font-family: serif};
-*#logga{
-    color: white;
-    font-size: 12px;
-    margin-right: 15px;
-    margin-top: 15px;
-    };
-
+body{background-color: blue;}
+h1{font-family: "Microsoft Tai", sans-serif;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+}
